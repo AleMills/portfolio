@@ -1,0 +1,46 @@
+input {
+    margin: 1rem;
+    height: 3rem;
+    border-radius: 30px;
+    border: none;
+    padding: 0 1rem;
+}
+
+input::placeholder {
+    text-transform: uppercase;
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid rgba(0, 0, 0, 0.446);
+}
+
+textarea {
+    margin: 1rem;
+    height: 6rem;
+    border-radius: 30px;
+    border: none;
+    resize: none;
+    padding: 1rem;
+}
+
+textarea::placeholder {
+    text-transform: uppercase;
+}
+
+.btn-formulario {
+    margin: auto;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #545454;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    input {
+        width: 80%;
+    }
+
+    textarea {
+        width: 80%;
+    }
+}

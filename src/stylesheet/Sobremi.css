@@ -1,0 +1,82 @@
+.contenedor-foto {
+    max-width: 30%;
+    margin-right: 30px;
+}
+
+.contenedor-foto img {
+    padding: 20px;
+    max-width: 80%;
+    border-radius: 20px;
+    background-color: #dddddd;
+}
+
+.sobremi {
+    padding: 20px 0;
+    max-width: 50%;
+}
+
+.sobremi .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+.sobremi h2 {
+    margin: 20px 0;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.sobremi h2 span {
+    color: #7f3fe0;
+}
+
+.sobremi h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.sobremi p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #545454;
+    margin-bottom: 15px;
+}
+
+.btn-cv {
+    width: 150px;
+    height: 40px;
+    border: 2px solid #545454;
+    border-radius: 20px;
+}
+
+.btn-cv a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #545454;
+}
+
+
+@media screen and (max-width: 767px) {
+    .contenedor-foto {
+        display: flex;
+        justify-content: center;
+        max-width: 50%;
+        margin-top: 2rem;
+        margin: 1rem 0;
+    }
+
+    .sobremi {
+        height: 30%;
+        margin-bottom: 2rem;
+        min-width: 100%;
+        padding: 20px;
+    }
+}

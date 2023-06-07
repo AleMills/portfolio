@@ -1,0 +1,10 @@
+.iconos-contacto {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: .75rem 5rem;
+}
+
+.iconos-contacto span {
+    margin: .25rem;
+}
