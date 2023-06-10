@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/build/static/css/main.ccc1827e.css",
-    "main.js": "/portfolio/build/static/js/main.be954125.js",
+    "main.css": "/portfolio/build/static/css/main.284108c6.css",
+    "main.js": "/portfolio/build/static/js/main.f867be44.js",
     "static/media/fondoVideo.mp4": "/portfolio/build/static/media/fondoVideo.070c798979909373d2f2.mp4",
     "static/media/fondo-habilidades.png": "/portfolio/build/static/media/fondo-habilidades.0bcba42f4b585e75ab99.png",
     "static/media/img_perfil.jpg": "/portfolio/build/static/media/img_perfil.77d1bf37a18fc057328f.jpg",
@@ -20,11 +20,11 @@
     "static/media/proyecto2.jpg": "/portfolio/build/static/media/proyecto2.7acfbd79adc7afafba9c.jpg",
     "static/media/logo.svg": "/portfolio/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/build/index.html",
-    "main.ccc1827e.css.map": "/portfolio/build/static/css/main.ccc1827e.css.map",
-    "main.be954125.js.map": "/portfolio/build/static/js/main.be954125.js.map"
+    "main.284108c6.css.map": "/portfolio/build/static/css/main.284108c6.css.map",
+    "main.f867be44.js.map": "/portfolio/build/static/js/main.f867be44.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccc1827e.css",
-    "static/js/main.be954125.js"
+    "static/css/main.284108c6.css",
+    "static/js/main.f867be44.js"
   ]
 }
