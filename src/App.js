@@ -16,6 +16,21 @@ import { FaHtml5, FaCss3Alt, FaSass, FaGitAlt, FaReact, FaBootstrap, FaPhoneAlt 
 import { IoLogoJavascript, IoMdMail, IoIosPin } from "react-icons/io";
 
 function App() {
+    
+// const nav = document.querySelector("#nav");
+// const abrir = document.querySelector("#abrir");
+// const cerrar = document.querySelector("#cerrar");
+
+// abrir.addEventListener("click", () => {
+// nav.classList.add("visible");
+// });
+
+// cerrar.addEventListener("click", () => {
+// nav.classList.remove("visible")
+// })
+
+
+
     return (
         <div className="App">
             <section className="inicio" id="inicio">
@@ -94,12 +109,12 @@ function App() {
                             ¡no dudes en contactarme!
                         </p>
                         <Contactarme
-                            icono={<FaPhoneAlt />}
-                            contacto="+54 9 1121931011"
-                        />
-                        <Contactarme
                             icono={<IoMdMail />}
                             contacto="Alejandrojofre949@gmail.com"
+                        />
+                        <Contactarme
+                            icono={<FaPhoneAlt />}
+                            contacto="+54 9 1121931011"
                         />
                         <Contactarme
                             icono={<IoIosPin />}
@@ -114,3 +129,5 @@ function App() {
 }
 
 export default App;
+
+

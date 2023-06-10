@@ -96,6 +96,7 @@ video {
 
 .contacto {
     display: flex;
+    justify-content: center;
     min-height: 100vh;
     background-color: #f3f3f3;
 }
@@ -172,8 +173,19 @@ video {
     }
 
     .columna {
-        width: 100%;
+        min-width: 100%;
         align-items: center;
         padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 461px) {
+    .blur {
+        margin: 1rem;
+    }
+
+    .habilidades .blur .fila {
+        display: flex;
+        flex-direction: column;
     }
 }

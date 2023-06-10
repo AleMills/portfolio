@@ -8,3 +8,11 @@
 .iconos-contacto span {
     margin: .25rem;
 }
+
+@media screen and (max-width: 767px) {
+    .contenedor-contacto {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
