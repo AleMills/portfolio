@@ -129,6 +129,56 @@ video {
     margin-bottom: 1rem;
 }
 
+.redes {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.links-redes,
+.redes button {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes button {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #111135;
+    color: white;
+    font-size: 2rem;
+    border: none;
+}
+
+.link {
+    text-decoration: none;
+    background-color: #111135;
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease;
+}
+
+.link:hover {
+    background-color: #d9d9d9;
+    color: #111135;
+}
+
+.link.active {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
 
 @keyframes circle-in-hesitate {
     0% {

@@ -11,25 +11,30 @@ import { Habilidad } from "./components/Habilidad";
 import { Proyecto } from "./components/Proyecto";
 import { Contactarme } from "./components/Contactarme";
 import { Inputs } from "./components/Inputs";
+import { Redes } from './components/Redes';
+import { useState } from 'react';
 
-import { FaHtml5, FaCss3Alt, FaSass, FaGitAlt, FaReact, FaBootstrap, FaPhoneAlt } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaSass, FaGitAlt, FaReact, FaBootstrap, FaPhoneAlt, FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { IoLogoJavascript, IoMdMail, IoIosPin } from "react-icons/io";
 
 function App() {
-    
-// const nav = document.querySelector("#nav");
-// const abrir = document.querySelector("#abrir");
-// const cerrar = document.querySelector("#cerrar");
 
-// abrir.addEventListener("click", () => {
-// nav.classList.add("visible");
-// });
+    // const nav = document.querySelector("#nav");
+    // const abrir = document.querySelector("#abrir");
+    // const cerrar = document.querySelector("#cerrar");
 
-// cerrar.addEventListener("click", () => {
-// nav.classList.remove("visible")
-// })
+    // abrir.addEventListener("click", () => {
+    // nav.classList.add("visible");
+    // });
 
-
+    // cerrar.addEventListener("click", () => {
+    // nav.classList.remove("visible")
+    // })
+    const [clickRedes, setClickRedes] = useState(false);
+    const activar = clickRedes ? "active" : "";
+    const mostrarRedes = () => {
+        setClickRedes(!clickRedes);
+    }
 
     return (
         <div className="App">
@@ -123,6 +128,27 @@ function App() {
                     </div>
                     <Inputs />
                 </form>
+            </section>
+            <section className="redes">
+            <div className="links-redes">
+                <Redes
+                    icono={<FaFacebookF />}
+                    clickRedes={activar}
+                />
+                <Redes
+                    icono={<FaInstagram />}
+                    clickRedes={activar}
+                />
+                <Redes
+                    icono={<FaLinkedinIn />}
+                    clickRedes={activar}
+                />
+                <Redes
+                    icono={<FaWhatsapp />}
+                    clickRedes={activar}
+                />
+            </div>
+            <button type="button" onClick={mostrarRedes}>+</button>
             </section>
         </div>
     );
