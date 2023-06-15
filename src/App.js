@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import imagenPerfil from "./asset/img/img_perfil.jpg";
 import videoBg from "./asset/video/fondoVideo.mp4";
 
@@ -12,29 +11,31 @@ import { Proyecto } from "./components/Proyecto";
 import { Contactarme } from "./components/Contactarme";
 import { Inputs } from "./components/Inputs";
 import { Redes } from './components/Redes';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { FaHtml5, FaCss3Alt, FaSass, FaGitAlt, FaReact, FaBootstrap, FaPhoneAlt, FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { IoLogoJavascript, IoMdMail, IoIosPin } from "react-icons/io";
 
 function App() {
-
-    // const nav = document.querySelector("#nav");
-    // const abrir = document.querySelector("#abrir");
-    // const cerrar = document.querySelector("#cerrar");
-
-    // abrir.addEventListener("click", () => {
-    // nav.classList.add("visible");
-    // });
-
-    // cerrar.addEventListener("click", () => {
-    // nav.classList.remove("visible")
-    // })
+    //funcion que abre el boton redes
     const [clickRedes, setClickRedes] = useState(false);
     const activar = clickRedes ? "active" : "";
     const mostrarRedes = () => {
         setClickRedes(!clickRedes);
     }
+
+
+    const [shouldAddClass, setShouldAddClass] = useState(false);
+    useEffect(() => {
+        // Función que se ejecuta cuando se produce el evento de scroll
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            const threshold = 300;
+            scrollPosition > threshold ? setShouldAddClass(true) : setShouldAddClass(false);
+        };
+        window.addEventListener('scroll', handleScroll);
+    }, []);
+
 
     return (
         <div className="App">
@@ -47,7 +48,8 @@ function App() {
                 <div className="overlay"></div>
                 <Bienvenida />
             </section>
-            <section id="sobremi">
+            <section id="sobremi"
+                className={`${shouldAddClass ? "scroll" : ""}`} >
                 <div className="contenedor-foto" id="comenzar">
                     <img
                         src={imagenPerfil}
@@ -130,25 +132,25 @@ function App() {
                 </form>
             </section>
             <section className="redes">
-            <div className="links-redes">
-                <Redes
-                    icono={<FaFacebookF />}
-                    clickRedes={activar}
-                />
-                <Redes
-                    icono={<FaInstagram />}
-                    clickRedes={activar}
-                />
-                <Redes
-                    icono={<FaLinkedinIn />}
-                    clickRedes={activar}
-                />
-                <Redes
-                    icono={<FaWhatsapp />}
-                    clickRedes={activar}
-                />
-            </div>
-            <button type="button" onClick={mostrarRedes}>+</button>
+                <div className="links-redes">
+                    <Redes
+                        icono={<FaFacebookF />}
+                        clickRedes={activar}
+                    />
+                    <Redes
+                        icono={<FaInstagram />}
+                        clickRedes={activar}
+                    />
+                    <Redes
+                        icono={<FaLinkedinIn />}
+                        clickRedes={activar}
+                    />
+                    <Redes
+                        icono={<FaWhatsapp />}
+                        clickRedes={activar}
+                    />
+                </div>
+                <button type="button" onClick={mostrarRedes}>+</button>
             </section>
         </div>
     );

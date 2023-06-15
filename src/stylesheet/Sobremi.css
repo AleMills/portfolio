@@ -51,17 +51,25 @@
 }
 
 .btn-cv {
-    width: 150px;
-    height: 40px;
-    border: 2px solid #545454;
-    border-radius: 20px;
-}
-
-.btn-cv a {
+    display: block;
+    text-align: center;
+    padding: 2px 0;
     font-size: 16px;
     text-decoration: none;
     color: #545454;
+    width: 8rem;
+    height: 2rem;
+    border: 2px solid #545454;
+    border-radius: 20px;
+    transition: .5s;
 }
+
+.btn-cv:hover {
+    background-color: #7f3fe0;
+    color: white;
+}
+
+
 
 
 @media screen and (max-width: 767px) {

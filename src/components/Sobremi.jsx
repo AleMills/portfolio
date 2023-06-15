@@ -19,9 +19,9 @@ export function Sobremi() {
                 Además, valoro la colaboración y el trabajo en equipo, ya que creo que es fundamental para el éxito de cualquier proyecto.
             </p>
             <p>Puedes descargar mi CV desde el siguiente Link</p>
-            <button type="button" className="btn-cv">
-                <a href="#">Descargar CV</a>
-            </button>
+            {/* <button type="button" className="btn-cv"> */}
+                <a className="btn-cv" href="#">Descargar CV</a>
+            {/* </button> */}
         </div>
     )
 }

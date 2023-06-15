@@ -36,6 +36,9 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.scroll {
     animation: circle-in-hesitate 2.5s;
 }
 
@@ -140,6 +143,8 @@ video {
 .redes button {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .redes button {
@@ -150,6 +155,12 @@ video {
     color: white;
     font-size: 2rem;
     border: none;
+    transition: .5s;
+}
+
+.redes button:hover {
+    background-color: #d9d9d9;
+    color: #111135;
 }
 
 .link {
@@ -237,5 +248,9 @@ video {
     .habilidades .blur .fila {
         display: flex;
         flex-direction: column;
+    }
+
+    .columna p {
+        padding: 0 3rem;
     }
 }

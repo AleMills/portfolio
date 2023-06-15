@@ -33,6 +33,12 @@ textarea::placeholder {
     height: 40px;
     border: 2px solid #545454;
     border-radius: 20px;
+    transition: .5s;
+}
+
+.btn-formulario:hover {
+    background-color: #7f3fe0;
+    color: white;
 }
 
 @media screen and (max-width: 767px) {
