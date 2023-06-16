@@ -36,9 +36,18 @@ textarea::placeholder {
     transition: .5s;
 }
 
+.btn-formulario.Enviado {
+    background-color: #00ba008e;
+    color: white;
+}
+
 .btn-formulario:hover {
     background-color: #7f3fe0;
     color: white;
+}
+
+.btn-formulario.Enviado:hover {
+    background-color: #00ba00;
 }
 
 @media screen and (max-width: 767px) {
