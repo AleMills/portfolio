@@ -1,0 +1,22 @@
+.iconos-contacto {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: .25rem 5rem;
+}
+
+.iconos-contacto span {
+    margin: .25rem;
+}
+
+@media screen and (max-width: 767px) {
+    .contenedor-contacto {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .iconos-contacto {
+        padding: .25rem 3rem;
+    }
+}

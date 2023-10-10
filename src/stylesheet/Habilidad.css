@@ -1,0 +1,17 @@
+.habilidad {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    color: white;
+}
+
+.icono {
+    font-size: 5rem;
+    transition: .5s ease;
+}
+
+.icono:hover {
+    transform: scale(1.2);
+}

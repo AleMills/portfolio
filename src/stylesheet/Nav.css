@@ -1,0 +1,97 @@
+.contenido-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    font-weight: 600;
+    background-color: rgba(13, 13, 13, 0.70);
+    backdrop-filter: blur(10px);
+    color: white;
+    height: 50px;
+    width: 100%;
+}
+
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.links li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem;
+    transition: .5s;
+}
+
+.links li {
+    transition: .5s;
+}
+
+.links li:hover {
+    transform: scale(1.2);
+}
+
+.links li a:hover {
+    color: #7f3fe0;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 24px;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: -100vh;
+        background-color: black;
+        padding: 2rem;
+        animation: wipe-out-up 2s;
+    }
+
+    .nav.visible {
+        display: block;
+        animation: wipe-in-down .5s;
+        transition: .5s;
+    }
+
+    .btn-cerrar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+}
+
+@keyframes wipe-in-down {
+    from {
+      clip-path: inset(0 0 100% 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:down"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
+  }
