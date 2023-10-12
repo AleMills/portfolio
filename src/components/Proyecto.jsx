@@ -5,7 +5,7 @@ export function Proyecto({ imagen, titulo, descripcion }) {
             <div className="proyecto">
                 <div className="overlay"></div>
                 <a href="#">
-                    <img src={`../../public/assets/img/proyecto${imagen}.jpg`} alt="proyecto"/>
+                    <img src={`/assets/img/proyecto${imagen}.jpg`} alt="proyecto"/>
                 </a>
                 <div className="info">
                     <h4>{titulo}</h4>
