@@ -105,7 +105,8 @@ function App() {
                     <Proyecto
                         imagen="1"
                         titulo="Tributo"
-                        descripcion="Diseño y lectura" />
+                        descripcion="Diseño y lectura"
+                        vinculo={"https://alemills.github.io/ecommerce/"} />
                     <Proyecto
                         imagen="2"
                         titulo="Tributo"

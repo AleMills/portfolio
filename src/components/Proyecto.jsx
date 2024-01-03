@@ -1,10 +1,10 @@
 import "../stylesheet/Proyecto.css"
 
-export function Proyecto({ imagen, titulo, descripcion }) {
+export function Proyecto({ imagen, titulo, descripcion, vinculo }) {
     return (
             <div className="proyecto">
                 <div className="overlay"></div>
-                <a href="#">
+                <a href={vinculo}>
                     <img src={`./assets/img/proyecto${imagen}.jpg`} alt="proyecto"/>
                 </a>
                 <div className="info">
