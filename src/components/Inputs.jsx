@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../stylesheet/Inputs.css"
 import { useState } from "react";
 

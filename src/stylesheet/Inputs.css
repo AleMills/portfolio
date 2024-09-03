@@ -28,10 +28,11 @@ textarea::placeholder {
 }
 
 .btn-formulario {
+    color: #7f3fe0;
     margin: auto;
     width: 150px;
     height: 40px;
-    border: 2px solid #545454;
+    border: 2px solid #7f3fe0;
     border-radius: 20px;
     transition: .5s;
 }
