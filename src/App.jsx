@@ -44,29 +44,6 @@ function App() {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
-  //funcion que envia el formulario a mi email
-  const form = useRef();
-  const sendEmail = (e) => {
-    
-    e.preventDefault();
-    console.log(e.target.value);
-    emailjs
-      .sendForm(
-        "service_srcv3sa",
-        "template_zrcr8xj",
-        form.current,
-        "zftj1eWygwOFGCCeg"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
   return (
     <div className="App">
       <section className="inicio" id="inicio">
@@ -105,7 +82,7 @@ function App() {
         </div>
       </section>
       <section className="contacto" id="contacto">
-        <form ref={form} onSubmit={sendEmail}>
+        <form>
           <div className="columna">
             <h4 className="titulo-contacto">Contactame</h4>
             <p>
@@ -126,7 +103,6 @@ function App() {
               contacto="Buenos Aires, Argentina."
             />
           </div>
-          {/* <Inputs /> */}
         </form>
       </section>
       <section className="redes">
