@@ -13,7 +13,6 @@
 
 
 #sobremi {
-  background-color: #F3FDF4;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -57,7 +56,6 @@
 .contacto {
   display: flex;
   justify-content: center;
-  min-height: 100vh;
   background-color: #f3f3f3;
 }
 
@@ -116,8 +114,7 @@
 }
 
 .redes button:hover {
-  background-color: #d9d9d9;
-  color: #111135;
+  background-color: #27272a;
 }
 
 .link {
@@ -137,8 +134,7 @@
 }
 
 .link:hover {
-  background-color: #d9d9d9;
-  color: #111135;
+  background-color: #27272a;
 }
 
 .link.active {
